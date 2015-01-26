@@ -2,7 +2,6 @@
 
 ## The team
 
-- Foo bar: email1
-- bar bar: email2
+- Oliver Donovan: donovan1.oliver@gmail.com
 
 ## Comments
