@@ -1,5 +1,7 @@
 package fr.unice.vicc;
 
+import org.cloudbus.cloudsim.power.PowerHost;
+import java.util.List;
 /**
  * Just a container to declare your home-made observers.
  *
@@ -11,7 +13,7 @@ public class Observers {
     /**
      * Build all the observers.
      */
-    public void build() {
+    public void build(List<PowerHost> hosts) {
 
     }
 }
