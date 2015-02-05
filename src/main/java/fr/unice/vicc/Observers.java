@@ -14,6 +14,6 @@ public class Observers {
      * Build all the observers.
      */
     public void build(List<PowerHost> hosts) {
-
+    		
     }
 }
