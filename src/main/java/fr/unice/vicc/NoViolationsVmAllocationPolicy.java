@@ -13,6 +13,10 @@ import java.util.Map;
  * @author Fabien Hermenier
  */
 public class NoViolationsVmAllocationPolicy extends VmAllocationPolicy {
+	
+	/**
+	 * 1) la compléxité de mon algorithme est de O(N^2) car pour tout les hosts il doit trouver la ou il n'y a pas de pénalité.
+	 */
 
     //To track the Host for each Vm. The string is the unique Vm identifier, composed by its id and its userId
     private Map<String, Host> vmTable;
