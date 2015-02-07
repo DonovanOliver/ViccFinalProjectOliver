@@ -14,11 +14,16 @@ import java.util.Map.Entry;
  */
 public class BalancingVmAllocationPolicy extends VmAllocationPolicy {
 
+	/**
+	 * 1) la compléxité de mon algorithme est de O(2N) car il cherche le host qui à le plus de capacité,
+	 * puis doit trouver le maximum l'équivalent du host qui à le plus de capacité.
+	 */
+	
     //To track the Host for each Vm. The string is the unique Vm identifier, composed by its id and its userId
     private Map<String, Host> vmTable;
     private Map<String, Integer> vmMIPS;
 
-    public BalancingVmAllocationPolicy(List<? extends Host> list) {
+	public BalancingVmAllocationPolicy(List<? extends Host> list) {
         super(list);
         vmTable = new HashMap<>();
         vmMIPS = new HashMap<>();

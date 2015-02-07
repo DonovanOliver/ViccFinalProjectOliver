@@ -26,7 +26,7 @@ public class Main {
 
     private static VmAllocationPolicyFactory policies = new VmAllocationPolicyFactory();
 
-    private static Observers observers = new Observers();
+    private static Observers observers;
 
     private static Revenue simulateDay(String d, String impl) throws Exception {
 
@@ -60,7 +60,7 @@ public class Main {
 
         //Here you can insert your observers
         PeakPowerObserver peakPowerObserver = new PeakPowerObserver(hosts);
-        observers.build(hosts);
+        observers=new Observers(hosts);
 
         double x = CloudSim.startSimulation();
 
